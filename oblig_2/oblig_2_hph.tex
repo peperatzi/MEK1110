@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{braket}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{multicol}
+\usetikzlibrary{arrows}
+\usepackage{float}
+\restylefloat{figure}
+
+\usepackage[figurename=Figure]{caption}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+\lstset{
+    language=Erlang,
+    mathescape=true
+}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\title{MEK1100 - Oblig 2}
+\author{Hans-Petter Harveg}
+\date{April 2018}
+
+\begin{document}
+
+\maketitle
+
+\section*{a$)$}
+
+I denne oppgaven har jeg lastet inn datafilen og skrevet testfunksjoner for de gitte oppgavene. Spesifikt har jeg skrevet følgende funksjoner
+\begin{itemize}
+\item \textit{get\_matrix\_sizes()}: skriver ut simensjonene på matrisen.
+\item \textit{test\_pixel\_spread()}: sjekker at bredden mellom pixlene er 0.5. Funksjonen returnerer \textit{False} dersom den finner en verdi $\Delta x \neq 0.5$.
+\item \textit{test\_y\_range()}: sjekker at dataen dekker høyden på røret.
+\end{itemize}
+Koden i sin helhet ligger under \hyperlink{sourcecode}{kildekode}.
+
+\section*{b$)$}
+
+
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=0.6\textwidth]{complex_contour}
+%\caption{Contour for $N=1/2$.}
+%\label{fig:figure_label}
+%\end{figure}
+
+
+
+
+\section*{Kildekode}
+\hypertarget{sourcecode}{}
+\lstinputlisting[language=Python]{code.py}
+
+
+\end{document}
+

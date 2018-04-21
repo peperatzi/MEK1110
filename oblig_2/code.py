@@ -1,6 +1,6 @@
 import scipy.io as sio
 import numpy as np
-
+import matplotlib.pyplot as plt
 
 class DataSet():
     def __init__(self, filename):
@@ -36,17 +36,42 @@ class DataSet():
         return True
 
 
-        def test_y_range(self):
-            yit = 
+    def test_y_range(self):
+        yit = 0
 
 
+    def plot_contours(self):
+        x = self.data["x"]
+        y = self.data["y"]
+        u = self.data["u"]
+        v = self.data["v"]
+        c = np.sqrt(u**2 + v**2)
+        plt.contour(x, y, c)
+
+    def plot_quiver(self):
+        a = 0
+
+    def render_plot(self, title, xlabel, ylabel, legend):
+        plt.title(title)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+        #plt.legend(legend)
+        plt.show()
+
+
+# Problem a)
 dataset = DataSet("data.mat")
-dataset.test_matrices_sizes()
+dataset.get_matrices_sizes()
 dataset.test_pixel_spread()
 dataset.test_y_range()
 
+# Problem b)
+dataset.plot_contours()
+dataset.render_plot()
 
+dataset.plot_quiver()
+dataset.render_plot()
 
-
+# Problem c)
 
 

@@ -81,18 +81,47 @@ I denne oppgaven har jeg laget to plot
 \label{fig:problem_b_contour_fig}
 \end{figure}
 
+
 \section*{c$)$}
-
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\textwidth]{problem_c_1}
-\caption{Contour for $N=1/2$.}
+\caption{Fordi hastigheten er så liten i vannet i forhold til i lufta er det vanskelig å se vektorpilene.}
 \label{fig:problem_b_vector_fig}
 \end{figure}
 
+\section*{d$)$}
+Divergensen til $\vec{v}$ er gitt ved
+\begin{equation}
+\nabla\cdot\vec{v} = \frac{\partial}{\partial x}u + \frac{\partial}{\partial y}v + \frac{\partial}{\partial z}w,
+\end{equation}
+men måten eksperimentet er satt opp på gir $\frac{\partial}{\partial z}w = 0$.
+Imkompressibel vil si at når man følger en fluidpartikkel gjennom et hastighetsfelt vil den ha konstant tetthet
+\begin{equation}
+\frac{D\rho}{dt} = 0.
+\end{equation}
+Derav fra kontinuitetsligningen har vi at
+\begin{equation}
+\frac{D\rho}{dt} + \rho\nabla\cdot\vec{v} = 0,
+\end{equation}
+hvor vi har at $\nabla\cdot\vec{v} = 0$ for imkomprissibelt fluid. Dette betyr at $\nabla\cdot\vec{v} = 0$
+\begin{equation}
+\frac{\partial}{\partial z}w = -\bigg(\frac{\partial}{\partial x}u + \frac{\partial}{\partial y}v\bigg)
+\end{equation}
 
+\section*{e$)$}
+Virvlingen til $\vec{v}$ er gitt ved
+\begin{equation}
+\nabla\cdot\vec{v} = \begin{vmatrix}\hat{i}&\hat{j}&\hat{k}\\\partial_{x}&\partial_{y}&\partial_{z}\\u&v&w\end{vmatrix}. 
+\end{equation}
+Som gir
+\begin{equation}
+\hat{k}\bigg(\frac{\partial}{\partial_{x}}v - \frac{\partial}{\partial_{y}}u \bigg),
+\end{equation}
+altså komponenten \textit{normalt på xy-planet}.
+\section*{f$)$}
 
+\section*{g$)$}
 
 \section*{Kildekode}
 \hypertarget{sourcecode}{}

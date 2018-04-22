@@ -63,19 +63,27 @@ class DataSet():
     def plot_quiver(self, x_0, x_1, y_0, y_1, step):
         [x, y, u, v, xit, yit] = self.get_data()
 
-        plt.quiver(x[x_0:x_1:step, y_0:y_1:step], y[x_0:x_1:step, y_0:y_1:step], u[x_0:x_1:step, y_0:y_1:step], v[x_0:x_1:step, y_0:y_1:step])
+        #plt.quiver(x[x_0:x_1:step, y_0:y_1:step], y[x_0:x_1:step, y_0:y_1:step], u[x_0:x_1:step, y_0:y_1:step], v[x_0:x_1:step, y_0:y_1:step])
+        plt.quiver(x, y, u, v)
         dataset.render_plot("Vektorfelt av vaesken", "x [mm]", "y [mm]")
 
-        self.plot_square()
+        self.plot_square([35, 160],[70, 170])
+        self.plot_square([35, 85],[70, 100])
+        self.plot_square([35, 50],[70, 60])
 
         plt.show()
 
 
-    def plot_square(x_0, y_0, x_1, y_1):
-        self.plot_line(x_0, x_1, y_0, 160, 'r')
-        self.plot_line(35, 70, 160, 160, 'g')
-        self.plot_line(35, 70, 160, 160, 'b')
-        self.plot_line(35, 70, 160, 160, 'c')
+    def plot_square(self, top_left, bottom_right):
+        x_0 = top_left[0]
+        x_1 = top_left[1]
+        y_0 = bottom_right[0]
+        y_1 = bottom_right[1]
+
+        self.plot_line(x_0, x_1, y_0, y_0, 'b') # top
+        self.plot_line(x_1, x_1, y_0, y_1, 'g') # right
+        self.plot_line(x_0, x_1, y_1, y_1, 'r') # bottom
+        self.plot_line(x_0, x_0, y_0, y_1, 'c') # left
 
 
     def plot_line(self, x_0, x_1, y_0, y_1, col):

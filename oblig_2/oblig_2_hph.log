@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.19)  22 APR 2018 13:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.19)  24 APR 2018 10:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -973,7 +973,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 54.
 
-(./oblig_2_hph.aux)
+(./oblig_2_hph.aux
+
+LaTeX Warning: Label `fig:problem_b_vector_fig' multiply defined.
+
+)
 \openout1 = `oblig_2_hph.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
@@ -1065,77 +1069,87 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 68.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 68.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
 
-Overfull \hbox (8.31277pt too wide) in paragraph at lines 68--69
+Overfull \hbox (8.31277pt too wide) in paragraph at lines 73--74
 []\OT1/cmr/m/it/10 get[]matrix[]sizes()\OT1/cmr/m/n/10 : skriver ut di-men-sjon
 ene p^^Wa ma-trisen ved hjelp av funksjo-
  []
 
-<problem_b.png, id=8, 578.16pt x 433.62pt>
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<problem_b.png, id=40, 578.16pt x 433.62pt>
 File: problem_b.png Graphic file (type png)
  <use problem_b.png>
-Package pdftex.def Info: problem_b.png used on input line 79.
+Package pdftex.def Info: problem_b.png used on input line 103.
 (pdftex.def)             Requested size: 207.0021pt x 155.24954pt.
 
-<problem_c_1.png, id=10, 578.16pt x 433.62pt>
+<problem_c_1.png, id=42, 578.16pt x 433.62pt>
 File: problem_c_1.png Graphic file (type png)
  <use problem_c_1.png>
-Package pdftex.def Info: problem_c_1.png used on input line 88.
+Package pdftex.def Info: problem_c_1.png used on input line 113.
 (pdftex.def)             Requested size: 207.0021pt x 155.24954pt.
- [1
+ [2 <./problem_b.png>] <problem_c_2.png, id=56, 578.16pt x 433.62pt>
+File: problem_c_2.png Graphic file (type png)
+ <use problem_c_2.png>
+Package pdftex.def Info: problem_c_2.png used on input line 120.
+(pdftex.def)             Requested size: 207.0021pt x 155.24954pt.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./problem_b.png>] [2 <./pr
-oblem_c_1.png>] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[3 <./problem_c_1.png> <./problem_c_2.png>] [4]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(./code.py
+) (./code.py
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
- [3] [4]) [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
+
+[5] [6] [7]) [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
  (./oblig_2_hph.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
 Package rerunfilecheck Info: File `oblig_2_hph.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 131.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
  ) 
 Here is how much of TeX's memory you used:
- 20352 strings out of 494374
- 367498 string characters out of 6164953
- 634113 words of memory out of 5000000
- 23183 multiletter control sequences out of 15000+600000
- 12481 words of font info for 49 fonts, out of 8000000 for 9000
+ 20554 strings out of 494374
+ 370152 string characters out of 6164953
+ 642803 words of memory out of 5000000
+ 23280 multiletter control sequences out of 15000+600000
+ 11849 words of font info for 46 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 55i,8n,54p,413b,2012s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-
-Output written on oblig_2_hph.pdf (5 pages, 472907 bytes).
+ 55i,9n,54p,413b,1998s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on oblig_2_hph.pdf (8 pages, 397240 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 231 compressed objects within 3 object streams
- 145 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 375 compressed objects within 4 object streams
+ 248 named destinations out of 1000 (max. 500000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
